@@ -8,6 +8,7 @@ example openai in cli
 
 ## Cara Install:
 
+- masukkan API key di line 6, API key bisa anda dapatkan [disni](https://beta.openai.com/account/api-keys)
 - buka cmd / powershell / git bash / etc
   > npm install / yarn
 - untuk menjalankan
