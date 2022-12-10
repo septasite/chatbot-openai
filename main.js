@@ -10,7 +10,7 @@ const openai = new OpenAIApi(configuration)
 
 try {
   const rl = readline.createInterface({ input, output })
-  const question = await rl.question('Masukan perintah: ')
+  const question = await rl.question('Masukan pertanyaan: ')
 
   const P = ['\\', '|', '/', '-']
   let x = 0

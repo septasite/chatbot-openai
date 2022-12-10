@@ -1,6 +1,6 @@
 # chatbot-openai
 
-example openapi in cli
+example openai in cli
 
 ## Required:
 
