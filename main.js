@@ -1,4 +1,4 @@
-import { stdin as input, stdout as output } from 'node:process'
+import { exit, stdin as input, stdout as output } from 'node:process'
 import * as readline from 'node:readline/promises'
 import { Configuration, OpenAIApi } from 'openai'
 
@@ -15,7 +15,7 @@ try {
   const P = ['\\', '|', '/', '-']
   let x = 0
   const loader = setInterval(() => {
-    process.stdout.write(`\r${P[x++]}`)
+    output.write(`\r${P[x++]}`)
     x %= P.length
   }, 250)
 
@@ -28,7 +28,7 @@ try {
 
   clearInterval(loader)
   console.log(completion.data.choices[0].text)
-  process.exit()
+  exit()
 } catch (err) {
   if (err.response) {
     console.log(err.response.status)
