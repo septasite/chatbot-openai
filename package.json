@@ -1,0 +1,18 @@
+{
+  "name": "chatbot-openai",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "license": "MIT",
+  "author": "septasite",
+  "keywords": [
+    "openai",
+    "chatbot"
+  ],
+  "dependencies": {
+    "openai": "^3.1.0"
+  }
+}
